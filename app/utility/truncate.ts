@@ -5,6 +5,9 @@ import {Pipe} from 'angular2/core'
 })
 export class TruncatePipe {
   transform(value: string, args: string[]) : string {
+    if(value == null) {
+      return value;
+    }
     let limit = args.length > 0 ? parseInt(args[0], 10) : 10;
     let trail = args.length > 1 ? args[1] : '...';
 

@@ -19,10 +19,21 @@
     <script>
       System.config({
         packages: {
+          defaultExtension: 'js',
           app: {
             format: 'register',
             defaultExtension: 'js'
+          },
+          node_modules: {
+            defaultExtension: 'js'
           }
+        },
+        path: {
+          'ng2-spin-kit/app/spinners': 'node_modules/ng2-spin-kit/app/spinners'
+        },
+        map: {
+          'ng2-spin-kit/app/spinners': 'node_modules/ng2-spin-kit/app/spinners',
+          'app/spinner/rotating-plane/rotating-plane.html' : 'node_modules/ng2-spin-kit/app/spinner/rotating-plane/rotating-plane.html'
         }
       });
       System.import('app/main')
@@ -33,7 +44,7 @@
   <body>
     <div class="container">
       <my-app>Loading...</my-app>
-      <product-card>Loading...</product-card>
+      <product-list>Loading...</product-list>
     </div>
   </body>
 </html>

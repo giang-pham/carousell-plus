@@ -1,0 +1,9 @@
+<input #searchStr placeholder="books, camera, games, ..." />
+<button (click)="getProductList(searchStr.value)">Search</button>
+<div class="row">
+  <div *ngFor="#item of items; #i = index" class="col-sm-2">
+    <!-- <li>{{item.title}}</li> -->
+    <product-card [item]=item></product-card>
+  </div>
+</div>
+<my-spinner [isRunning]="isRunning"></my-spinner>
