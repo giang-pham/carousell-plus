@@ -3,11 +3,11 @@ import {Http, HTTP_PROVIDERS} from 'angular2/http';
 import 'rxjs/add/operator/map';
 import {TruncatePipe} from '../utility/truncate';
 import {ProductCard} from './product-card.component';
-import {SpinnerComponent} from '../utility/spinner/spinner.component';
+//import {SpinnerComponent} from '../utility/spinner/spinner.component';
 
 @Component({
   selector: 'product-list',
-  directives: [ProductCard, SpinnerComponent],
+  directives: [ProductCard],
   viewProviders: [HTTP_PROVIDERS],
   pipes: [TruncatePipe],
   templateUrl: 'app/product-card/product-list.html'

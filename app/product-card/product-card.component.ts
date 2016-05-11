@@ -4,7 +4,8 @@ import {TruncatePipe} from '../utility/truncate';
 @Component({
   selector: 'product-card',
   pipes: [TruncatePipe],
-  templateUrl: 'app/product-card/product-card.html'
+  templateUrl: 'app/product-card/product-card.html',
+  styleUrls: ['app/product-card/product-card.css']
 })
 
 export class ProductCard {

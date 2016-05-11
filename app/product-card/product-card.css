@@ -1,0 +1,36 @@
+.pdt-card-attr, .pdt-card-seller, .pdt-card-title {
+    padding: .6em;
+}
+
+.pdt-card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    margin-bottom: 4px;
+    padding-bottom: 0;
+}
+
+.pdt-card-img {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 100%;
+    background: #ccc;
+}
+
+.pdt-card-img, .pdt-card-img img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.pdt-card-attr {
+    color: #b3b3b3;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.pdt-card-likes {
+    float: right;
+}

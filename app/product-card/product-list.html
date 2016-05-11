@@ -1,7 +1,8 @@
 <input #searchStr placeholder="books, camera, games, ..." />
 <button (click)="getProductList(searchStr.value)">Search</button>
+<hr>
 <div class="row">
-  <div *ngFor="#item of items; #i = index" class="col-sm-2">
+  <div *ngFor="#item of items; #i = index">
     <!-- <li>{{item.title}}</li> -->
     <product-card [item]=item></product-card>
   </div>

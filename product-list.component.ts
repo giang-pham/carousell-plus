@@ -1,13 +1,13 @@
 import {Component} from 'angular2/core'
 import {Http, HTTP_PROVIDERS} from 'angular2/http';
 import 'rxjs/add/operator/map';
-import {TruncatePipe} from '../utility/truncate';
-import {ProductCard} from './product-card.component';
-import * as spinner from 'ng2-spin-kit/app/spinners'
+import {TruncatePipe} from './app/utility/truncate';
+import {ProductCard} from './app/product-card/product-card.component';
+//import * as spinner from 'ng2-spin-kit/app/spinners'
 
 @Component({
   selector: 'product-list',
-  directives: [ProductCard, spinner.RotatingPlaneComponent],
+  directives: [ProductCard],
   viewProviders: [HTTP_PROVIDERS],
   pipes: [TruncatePipe],
   templateUrl: 'app/product-card/product-list.html'

@@ -1,8 +1,23 @@
-<div class="card">
+<!-- <div class="card">
   <img class="card-img-top" data-src="{{item.primary_photo_url}}" alt="{{item.description | truncate : letterLimit}}" style="height: 180px; width: 100%; display: block;">
   <div class="card-block">
-    <!--<p class="card-text">{{item.title | truncate : 20 }}</p>-->
-    <!-- <p class="card-text">{{item.description | truncate : letterLimit}}</p> -->
+    <p class="card-text">{{item.title | truncate : 20 }}</p>
+    <p class="card-text">{{item.description | truncate : letterLimit}}</p>
     <a href="https://carousell.com/p/{{item.id}}" class="btn btn-primary">PM</a>
   </div>
+</div> -->
+
+<div class="col-md-3 col-lg-5ths col-xs-6">
+  <figure class="card pdt-card">
+    <div class="pdt-card-img">
+      <img src="{{item.primary_photo_url}}" />
+    </div>
+    <figcaption class="pdt-card-caption">
+      <p class="pdt-card-title">{{item.title}}</p>
+      <p class="pdt-card-attr">
+        <span class="pdt-card-price">{{item.likes_count}} likes</span>
+        <span class="pdt-card-likes">${{item.price}}</span>
+      </p>
+    </figcaption>
+  </figure>
 </div>

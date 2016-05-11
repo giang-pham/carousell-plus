@@ -2,9 +2,8 @@
   <head>
     <title>Angular 2 QuickStart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="styles.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
@@ -26,14 +25,16 @@
           },
           node_modules: {
             defaultExtension: 'js'
-          }
+          },
+          "angular2-fontawesome": {"defaultExtension": 'js'}
         },
         path: {
           'ng2-spin-kit/app/spinners': 'node_modules/ng2-spin-kit/app/spinners'
         },
         map: {
           'ng2-spin-kit/app/spinners': 'node_modules/ng2-spin-kit/app/spinners',
-          'app/spinner/rotating-plane/rotating-plane.html' : 'node_modules/ng2-spin-kit/app/spinner/rotating-plane/rotating-plane.html'
+          'app/spinner/rotating-plane/rotating-plane.html' : 'node_modules/ng2-spin-kit/app/spinner/rotating-plane/rotating-plane.html',
+          'angular2-fontawesome': 'node_modules/angular2-fontawesome/lib'
         }
       });
       System.import('app/main')
